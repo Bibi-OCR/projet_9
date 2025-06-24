@@ -130,6 +130,10 @@ body {
 
 
 }
+.post, .page {
+  max-width:max-content !important;
+ 
+}
 .banner {
   position:relative;
   width:100%;
@@ -158,7 +162,8 @@ body {
 }
 .banner #background-video {
   height:100%;
-  width:100%
+  width:100%;
+
 }
 .banner {
   opacity:0;
@@ -170,6 +175,7 @@ body {
   transition:all 2s ease-in-out;
   max-width: 1440px;
   margin: auto;
+ 
 }
 .container-img {
   opacity:0;
