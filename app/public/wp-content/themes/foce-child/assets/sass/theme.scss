@@ -229,27 +229,29 @@ ul::after{
 //effet paralax des nuages
 .story #place{
     background-image: url(../img/studio_koukaki-image_place.png);
+    position: relative;
     .big_cloud{
         background-image: url(../img/big_cloud.png);
         height: 122px;
         width: 316px;
-        position: relative;
+        position: absolute;
         margin: 0px;
         filter:blur(8px);
         top: 65px;
-        left: 50px;
+        right: 0px;
     }
     .little_cloud{
         background-image: url(../img/little_cloud.png);
         height: 55px;
         width: 142px;
-        position: relative;
+        position: absolute;
         margin: 0px;
         filter:blur(8px);
         top: 248px;
-        left:-600px;
+        right:0px;
     }
 }
+
 
 // logo en sticky sur la vidéo.
 .sticky{

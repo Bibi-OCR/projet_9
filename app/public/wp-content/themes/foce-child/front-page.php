@@ -33,8 +33,15 @@ get_header();
                     </h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
-                <div class="big_cloud" data-bottom-top="transform:translate(0px, 0px)" data-top-bottom="transform:translate(300px, 0px)"></div>
-                <div class="little_cloud" data-bottom-top="transform:translate(0px, 0px)" data-top-bottom="transform:translate(300px, 0px)"></div>
+                <div class="big_cloud" 
+     data-top-bottom="transform:translateX(0px)" 
+     data-bottom-top="transform:translateX(300px)">
+</div>
+
+<div class="little_cloud" 
+     data-top-bottom="transform:translateX(0px)" 
+     data-bottom-top="transform:translateX(300px)">
+</div>
             </article>
         </section>
         <section id="studio-top"></section>

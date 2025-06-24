@@ -115,4 +115,23 @@ menuLink.forEach((link) => {
 
 
 
+// Gestion du fallback image/vidéo
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('background-video');
+    const banner = document.querySelector('.banner');
+    
+    if (video && banner) {
+        // Masquer l'image de fond une fois la vidéo chargée
+        video.addEventListener('loadeddata', function() {
+            banner.style.backgroundImage = 'none';
+        });
+        
+        // En cas d'erreur de chargement de la vidéo, garder l'image de fond
+        video.addEventListener('error', function() {
+            console.log('Erreur de chargement de la vidéo, utilisation de l\'image de fond');
+            video.style.display = 'none';
+        });
+    }
+});
+
 

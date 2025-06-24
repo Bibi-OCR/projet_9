@@ -142,3 +142,4 @@ Stack trace:
 #2 C:\Users\Bilel\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\Bilel\\...')
 #3 {main}
   thrown in C:\Users\Bilel\Local Sites\koukaki\app\public\wp-content\themes\foce-child02\front-page.php on line 51
+[17-Jun-2025 09:39:22 UTC] Erreur d’événement de replanification de tâche pour le crochet wp_privacy_delete_old_export_files. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"hourly","args":[],"interval":3600}

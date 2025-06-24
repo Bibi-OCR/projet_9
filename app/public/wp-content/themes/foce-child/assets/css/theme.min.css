@@ -38,6 +38,11 @@
   opacity:1
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 }
 .oscars {
   display:flex;
@@ -122,6 +127,8 @@
   height:200px
 }
 
+
+
 }
 .banner {
   position:relative;
@@ -130,7 +137,11 @@
   max-width:1440px;
   max-height:806px;
   min-height:unset;
-  margin-bottom:100px
+  margin-bottom:100px;
+  background-image: url('http://localhost:10022/wp-content/uploads/2025/06/Studio_Koukaki-image_place.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .banner .container-img {
   position:absolute;
@@ -156,7 +167,9 @@
 .banner.active {
   opacity:1;
   transform:translateY(0vh);
-  transition:all 2s ease-in-out
+  transition:all 2s ease-in-out;
+  max-width: 1440px;
+  margin: auto;
 }
 .container-img {
   opacity:0;
@@ -332,7 +345,7 @@
   display:flex;
   flex-direction:column;
   width:100%;
-  height:calc(100vh - 80px);
+  height:100%;
   background-color:#fff5e9;
   align-items:center;
   font-size:4rem;
@@ -350,10 +363,7 @@
   text-decoration:none;
   z-index:10
 }
-.main-menu.active .koukaki_logo {
-  position:absolute;
-  bottom:4%
-}
+
 .main-menu.active .cat_orange {
   position:absolute;
   bottom:10%;
